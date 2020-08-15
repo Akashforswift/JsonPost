@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ruF-oX-nfa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JsonPOSTMethod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9OV-XS-AYO">
+                                <rect key="frame" x="20" y="94" width="374" height="196"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="izX-bY-jbi">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="titel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJD-af-dMV">
+                                        <rect key="frame" x="0.0" y="54" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="body" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZj-z5-Vjm">
+                                        <rect key="frame" x="0.0" y="108" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1k-Cl-Jaz">
+                                        <rect key="frame" x="0.0" y="162" width="374" height="34"/>
+                                        <state key="normal" title="POST"/>
+                                        <connections>
+                                            <action selector="btnPostClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oef-M3-xvV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9OV-XS-AYO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Dk1-wK-MKd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9OV-XS-AYO" secondAttribute="trailing" constant="20" id="T8i-Pc-89r"/>
+                            <constraint firstItem="9OV-XS-AYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rWc-sn-5lR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtBody" destination="SZj-z5-Vjm" id="aZ3-Se-Q3g"/>
+                        <outlet property="txtID" destination="izX-bY-jbi" id="mTx-yp-fgb"/>
+                        <outlet property="txtTitle" destination="XJD-af-dMV" id="2hn-PE-16C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="120"/>
+        </scene>
+        <!--Secondsample View Controller-->
+        <scene sceneID="Z0F-d5-Jcy">
+            <objects>
+                <viewController id="ruF-oX-nfa" customClass="SecondsampleViewController" customModule="JsonPOSTMethod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHg-IV-DfA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="nR2-ie-uZL">
+                                <rect key="frame" x="20" y="144" width="374" height="418"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zFc-d2-ERr">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="74.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I1d-vq-fCS">
+                                        <rect key="frame" x="0.0" y="114.5" width="374" height="74.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="body" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NmD-Yb-L8O">
+                                        <rect key="frame" x="0.0" y="229" width="374" height="74.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-Ng-Jh7">
+                                        <rect key="frame" x="0.0" y="343.5" width="374" height="74.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="send"/>
+                                        <connections>
+                                            <action selector="sendbtn:" destination="ruF-oX-nfa" eventType="touchUpInside" id="Hte-T0-W9A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nR2-ie-uZL" firstAttribute="leading" secondItem="Z6H-QN-YLz" secondAttribute="leading" constant="20" id="0gM-1b-aD5"/>
+                            <constraint firstItem="nR2-ie-uZL" firstAttribute="top" secondItem="Z6H-QN-YLz" secondAttribute="top" constant="100" id="CYO-tc-moM"/>
+                            <constraint firstItem="Z6H-QN-YLz" firstAttribute="trailing" secondItem="nR2-ie-uZL" secondAttribute="trailing" constant="20" id="J7R-aT-umo"/>
+                            <constraint firstItem="Z6H-QN-YLz" firstAttribute="bottom" secondItem="nR2-ie-uZL" secondAttribute="bottom" constant="300" id="SeY-gi-UpB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z6H-QN-YLz"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtbody" destination="NmD-Yb-L8O" id="pu3-kD-XCu"/>
+                        <outlet property="txtid" destination="zFc-d2-ERr" id="fqe-8D-Rze"/>
+                        <outlet property="txttitle" destination="I1d-vq-fCS" id="AP0-kr-suE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hng-qc-xLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="103"/>
+        </scene>
+    </scenes>
+</document>
